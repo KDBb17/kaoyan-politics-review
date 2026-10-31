@@ -1,0 +1,16 @@
+{
+  // MiMo Desktop 的 mimocode.jsonc —— mcp 段示例
+  // 把下面这个条目加进顶层 "mcp" 里，路径换成接收方机器上的实际路径即可。
+  // 注意：mimocode.jsonc 支持注释，但不要写重复的 "mcp" 键。
+  "mcp": {
+    "kaoyan-politics": {
+      "type": "local",
+      "command": ["python", "C:\\path\\to\\kaoyan-politics-mcp\\server.py"],
+      "environment": {
+        // 可省略：默认用 server.py 同目录的 data.json
+        "KYZZ_DATA": "C:\\path\\to\\kaoyan-politics-mcp\\data.json"
+      },
+      "enabled": true
+    }
+  }
+}
